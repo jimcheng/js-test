@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+	<meta charset="utf-8">
+	<title></title>
+	<head>
+		<script type="text/javascript">
+			/*冒泡排序*/
+			/*这是我写的*/
+			var arr = [9, 8, 7, 6, 5, 4];
+			for (var i = 0; i < arr.length-1; i++) {
+				for（
+				var j = 0;
+				j < arr.length - i - 1;
+				j++) {
+				if (arr[j] > arr[j + 1]) {
+					var tmp = arr[j + 1];
+					arr[j + 1] = arr[j];
+					arr[j] = tmp;
+				}
+			}
+			}
+			/*这是网上找的正确的*/
+			let arr = [9, 8, 7, 6, 5, 4];
+			for (var i = 0; i < arr.length - 1; i++) {
+				for (var j = 0; j < arr.length - i - 1; j++) {
+					if (arr[j] > arr[j + 1]) {
+						let tmp = arr[j];
+						arr[j] = arr[j + 1];
+						arr[j + 1] = tmp;
+					}
+				}
+				console.log('newArr', arr);
+			}
+			alert(arr);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
