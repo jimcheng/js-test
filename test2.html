@@ -8,7 +8,7 @@
 			/*这是我写的*/
 			var arr = [9, 8, 7, 6, 5, 4];
 			for (var i = 0; i < arr.length-1; i++) {
-				for（
+				for（	// 改行的小括号不正确，当前是中文格式@jimcheng
 				var j = 0;
 				j < arr.length - i - 1;
 				j++) {
@@ -17,10 +17,10 @@
 					arr[j + 1] = arr[j];
 					arr[j] = tmp;
 				}
-			}
+			} // 这里的括号应该要缩进@jimcheng
 			}
 			/*这是网上找的正确的*/
-			let arr = [9, 8, 7, 6, 5, 4];
+			let arr = [9, 8, 7, 6, 5, 4]; // 这里不能使用let，不然后面是不可以对arr进行重新赋值@jimcheng
 			for (var i = 0; i < arr.length - 1; i++) {
 				for (var j = 0; j < arr.length - i - 1; j++) {
 					if (arr[j] > arr[j + 1]) {
